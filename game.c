@@ -4,6 +4,21 @@
 #include<stdlib.h>
 #include<string.h>
 #include<time.h>
+void top_score()
+{
+    system("cls");
+    char name[20];
+    float scr;
+    FILE *f;
+    f=fopen("score.txt","r");
+    fscanf(f,"%s%f",&name,&scr);
+    printf("\n\n\t\t*************************************************************");
+    printf("\n\n\t\t\t %s was the Highest Score",name);
+    printf("\n\n\t\t\t score: %f",scr);
+    printf("\n\n\t\t*************************************************************");
+    fclose(f);
+}
+
 void help()
 {
     system("cls");
@@ -23,7 +38,7 @@ void help()
 	printf("\n\n**************************************************************************");
 	printf("\n\n*****This quizgame is part of the project of computer programming with c code ******");
     printf("\033[1;31m");
-    printf("\n\n\nPrees Enter any key to Main menu");
+    printf("\n\n\nPrees any key to Main menu");
 }
 int main()
 {
@@ -49,7 +64,6 @@ int main()
     printf("\n\t\t  \033[0;36m________________________________________\033[0;37m\n");
     printf("\n\t\t    - Press \033[1;31mS\033[0;37m to start the game");
     printf("\n\t\t    - Press \033[1;31mV\033[0;37m to view the highest score  ");
-    printf("\n\t\t    - Press \033[1;31mR\033[0;37m to reset score");
     printf("\n\t\t    - Press \033[1;31mH\033[0;37m for help            ");
     printf("\n\t\t    - Press \033[1;31mQ\033[0;37m to quit             ");
     printf("\n\t\t  \033[0;36m________________________________________\033[0;37m\n\n");
@@ -72,29 +86,34 @@ int main()
         getch();
         goto mainhome;
     }
+    else if(choice == 'V'){
+        top_score();
+        getch();
+        goto mainhome;
+    }
     else
         goto mainhome;
     printf("\n\n\n\n\n\n\n\n\n\n\t\t\tResister your name:");
     gets(playername);
 
     system("cls");
-    printf("\n ------------------  Welcome %s to C Program Quiz Game --------------------------",playername);
-    printf("\n\n Here are some tips you might wanna know before playing:");
-    printf("\n -------------------------------------------------------------------------");
-    printf("\n >> There are 2 rounds in this Quiz Game,WARMUP ROUND & CHALLANGE ROUND");
-    printf("\n >> In warmup round you will be asked total 3 questions to test your");
-    printf("\n    general knowledge. You are eligible to play the game if you give atleast 2");
-    printf("\n    right answers, otherwise you can't proceed further to the Challenge Round.");
-    printf("\n >> Your game starts with CHALLANGE ROUND. In this round you will be asked a");
-    printf("\n    total of 10 questions. Each right answer will be awarded $100,000!");
-    printf("\n    By this way you can win upto ONE MILLION cash prize!!!!!..........");
-    printf("\n >> You will be given 4 options and you have to press A, B ,C or D for the");
-    printf("\n    right option.");
-    printf("\n >> You will be asked questions continuously, till right answers are given");
-    printf("\n >> No negative marking for wrong answers!");
-    printf("\n\n\t!!!!!!!!!!!!! ALL THE BEST !!!!!!!!!!!!!");
-    printf("\n\n\n Press Y  to start the game!\n");
-    printf("\n Press any other key to return to the main menu!");
+    printf("\n\t\t ---------------------  Welcome %s to C Program Quiz Game ---------------------",playername);
+    printf("\n\n\t\t Here are some tips you might wanna know before playing:");
+    printf("\n\t\t -------------------------------------------------------------------------");
+    printf("\n\t\t >> There are 2 rounds in this Quiz Game,WARMUP ROUND & CHALLANGE ROUND");
+    printf("\n\t\t >> In warmup round you will be asked total 3 questions to test your");
+    printf("\n\t\t    general knowledge. You are eligible to play the game if you give atleast 2");
+    printf("\n\t\t    right answers, otherwise you can't proceed further to the Challenge Round.");
+    printf("\n\t\t >> Your game starts with CHALLANGE ROUND. In this round you will be asked a");
+    printf("\n\t\t    total of 10 questions. Each right answer will be awarded $100,000!");
+    printf("\n\t\t    By this way you can win upto ONE MILLION cash prize!!!!!..........");
+    printf("\n\t\t >> You will be given 4 options and you have to press A, B ,C or D for the");
+    printf("\n\t\t    right option.");
+    printf("\n\t\t >> You will be asked questions continuously, till right answers are given");
+    printf("\n\t\t >> No negative marking for wrong answers!");
+    printf("\n\n\t\t\t\t    !!!!!!!!!!!!! ALL THE BEST !!!!!!!!!!!!!");
+    printf("\n\n\n\n\t\t\t\033[0;34m Press Y  to play this game!\n");
+    printf("\n\t\t\t\033[1;31m Press any other key to return to the main menu!");
     if (toupper(getch())=='Y')
 		{
 		    goto home;
@@ -102,7 +121,6 @@ int main()
 	else
 	{
         goto mainhome;
-        system("cls");
     }
     home:
     system("cls");
