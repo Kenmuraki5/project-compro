@@ -113,7 +113,7 @@ int main()
     printf("\n\t\t >> No negative marking for wrong answers!");
     printf("\n\n\t\t\t\t    !!!!!!!!!!!!! ALL THE BEST !!!!!!!!!!!!!");
     printf("\n\n\n\n\t\t\t\033[0;34m Press Y  to play this game!\n");
-    printf("\n\t\t\t\033[1;31m Press any other key to return to the main menu!");
+    printf("\n\t\t\t\033[1;31m Press any other key to return to the main menu!\033[0;37m");
     if (toupper(getch())=='Y')
 		{
 		    goto home;
