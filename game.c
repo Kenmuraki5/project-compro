@@ -17,11 +17,13 @@ void help()
     printf("\n 2) Your game starts with the CHALLANGE ROUND. In this round you will be asked");
     printf("\n    total 10 questions each right answer will be awarded $100,000.");
     printf("\n    By this way you can win upto ONE MILLION cash prize in USD...............");
-    printf("\n 3> You will be given 4 options and you have to press A, B ,C or D for the");
+    printf("\n 3) You will be given 4 options and you have to press A, B ,C or D for the");
     printf("\n    right option");
-    printf("\n 4> You will be asked questions continuously if you keep giving the right answers.");
-	printf("\n\n\t*****************************************************************");
-	printf("\n\n\t*****This quizgame is part of the project of computer programming with c code ********");
+    printf("\n 4) You will be asked questions continuously if you keep giving the right answers.");
+	printf("\n\n**************************************************************************");
+	printf("\n\n*****This quizgame is part of the project of computer programming with c code ******");
+    printf("\033[1;31m");
+    printf("\n\n\nPrees Enter any key to Main menu");
 }
 int main()
 {
@@ -67,7 +69,9 @@ int main()
 		exit(1);
     else if (choice=='H'){
         help();
-        getch();}
+        getch();
+        goto mainhome;
+    }
     else
         goto mainhome;
     printf("\n\n\n\n\n\n\n\n\n\n\t\t\tResister your name:");
