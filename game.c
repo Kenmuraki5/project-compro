@@ -76,7 +76,7 @@ int main()
        system("cls");
        }
 
-     home:
+    home:
      system("cls");
      count=0;
      for(i=1;i<=3;i++)
