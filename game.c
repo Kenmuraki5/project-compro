@@ -4,6 +4,23 @@
 #include<stdlib.h>
 #include<string.h>
 #include<time.h>
+void edit_score(float score, char plnm[20])
+{
+    system("cls");
+	float sc;
+	char nm[20];
+	FILE *f;
+	f=fopen("score.txt","r");
+	fscanf(f,"%s%f",&nm,&sc);
+	if (score>=sc){ 
+        sc=score;
+	    fclose(f);
+	    f=fopen("score.txt","w");
+	    fprintf(f,"%s\n%.2f",plnm,sc);
+	    fclose(f);
+    }
+}
+
 void top_score()
 {
     system("cls");
@@ -45,7 +62,7 @@ int main()
     int countr,number,number2,count,i,n;
     float score;
     char choice;
-    char playername[20];
+    char playername[30];
     time_t t;
     time(&t);
     mainhome:
@@ -93,7 +110,8 @@ int main()
     }
     else
         goto mainhome;
-    printf("\n\n\n\n\n\n\n\n\n\n\t\t\tResister your name:");
+    printf("\n\n\n******Press ENTER to go warm-up game******");
+    printf("\n\n\n\n\n\n\n\t\t\tResister your name: ");
     gets(playername);
 
     system("cls");
@@ -218,5 +236,85 @@ int main()
                 }
 		}
 	}
-}
+    if(count>=2)
+        goto test;
+    else
+        {
+        system("cls");
+        printf("\n\nSORRY YOU ARE NOT ELIGIBLE TO PLAY THIS GAME Because you stupid, BETTER LUCK NEXT TIME");
+        getch();
+        goto mainhome;
+        }
+    test:
+    system("cls");
+    printf("\n\n\t*** CONGRATULATION %s you are eligible to play the Game ***",playername);
+    printf("\n\n\n\n\t!Press P key to Start the Game!");
+    if(toupper(getch())=='P')
+    {
+		goto game;
+    }
+    else{
+        goto test;
+    }
+    game:
+    system("cls");
+    countr=0;
+    for(i=1;i<=2;i++)
+    {
+        system("cls");
+        number2=i;
+        switch(number2)
+        {
+            case 1:
+                printf("\n\nWhat is the National Game of England?");
+                printf("\n\nA.Football\t\tB.Basketball\n\nC.Cricket\t\tD.Baseball");
+                if (toupper(getch())=='C')
+                    {printf("\n\nCorrect!!!");countr++;getch();
+                    break;getch();}
+                else
+                    {printf("\n\nWrong!!! The correct answer is C.Cricket");getch();
+                    break;}
 
+            case 2:
+                printf("\n\n\nStudy of Earthquake is called............,");
+                printf("\n\nA.Seismology\t\tB.Cosmology\n\nC.Orology\t\tD.Etimology");
+                if (toupper(getch())=='A')
+                    {printf("\n\nCorrect!!!");countr++;getch();
+                    break;}
+                else
+                    {
+                    printf("\n\nWrong!!! The correct answer is A.Seismology");getch();
+                    break;
+                    }
+        }
+    }
+    system("cls");
+	score=(float)countr*100000;
+	if(score==20000)
+	{
+	    printf("\n \t\t**************** wowwwwwwwwww ****************");
+        printf("\n\n\n \t\t     you are intelligent man");
+        printf("\n\n\n \t\t  congratulations a new millionare");
+	    printf("\n\t\t    YOU ARE A MILLIONAIRE!!!!!!!!!");
+	    printf("\n\t\t    You won $%.2f",score);
+	    printf("\t\t Thank You!!");
+	}
+	else
+    {
+	    printf("\n\n\t******** SORRY YOU DIDN'T WIN ANY CASH ********");
+	    printf("\n\t\t Thanks for your participation");
+	    printf("\n\t\t TRY AGAIN");
+        goto go;
+    }
+
+	go:
+	puts("\n\n Press Y if you want to play next game");
+	puts(" Press any key if you want to go main menu");
+	if (toupper(getch())=='Y')
+		goto home;
+	else
+		{
+		edit_score(score,playername);
+		goto mainhome;
+        }
+}
