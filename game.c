@@ -4,20 +4,20 @@
 #include<stdlib.h>
 #include<string.h>
 #include<time.h>
-void edit_score(float score, char plnm[20])
+void change_topscore(float newscore, char namee[20])
 {
     system("cls");
-	float sc;
-	char nm[20];
-	FILE *f;
-	f=fopen("score.txt","r");
-	fscanf(f,"%s%f",&nm,&sc);
-	if (score>=sc){ 
-        sc=score;
-	    fclose(f);
-	    f=fopen("score.txt","w");
-	    fprintf(f,"%s\n%.2f",plnm,sc);
-	    fclose(f);
+    char oldnm[];
+    float score;
+    FILE *high;
+    high=fopen("score.txt","r");
+    fscanf(high,"%s%f",&oldnm,&score);
+    if (newscore>=score)
+    { 
+        fclose(high);
+        high=fopen("score.txt","w");
+        fprintf(high,"%s\n%.2f", namee, newscore);
+        fclose(high);
     }
 }
 
