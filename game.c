@@ -228,38 +228,106 @@ int main()
         switch(number2)
         {
             case 1:
-                printf("\n\nWhat is the National Game of England?");
-                printf("\n\nA.Football\t\tB.Basketball\n\nC.Cricket\t\tD.Baseball");
+                printf("\n\nHow high is Mount Everest?");
+                printf("\n\nA.6848 m\t\tB.7848 m\n\nC.8848 m\t\tD.9848 m");
                 if (toupper(getch())=='C')
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;getch();}
                 else
-                    {printf("\n\nWrong!!! The correct answer is C.Cricket");getch();
+                    {printf("\n\nWrong!!! The correct answer is C.8848 m");getch();
                     break;}
 
             case 2:
-                printf("\n\n\nStudy of Earthquake is called............,");
-                printf("\n\nA.Seismology\t\tB.Cosmology\n\nC.Orology\t\tD.Etimology");
-                if (toupper(getch())=='A')
+                printf("\n\n\nWho is the president of America?");
+                printf("\n\nA.John Cena\t\tB.Joe Biden\n\nC.Michael Jordan\t\tD.Dwayne Johnson");
+                if (toupper(getch())=='B')
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;}
                 else
                 {
-                    printf("\n\nWrong!!! The correct answer is A.Seismology");getch();
-                    break;
-                }           
-            // ตัวอย่าง
-            // case 3:
-            //     printf("\n\n\nStudy of Earthquake is called............,");
-            //     printf("\n\nA.Seismology\t\tB.Cosmology\n\nC.Orology\t\tD.Etimology");
-            //     if (toupper(getch())=='A')
-            //         {printf("\n\nCorrect!!!");countr++;getch();
-            //         break;}
-            //     else
-            //     {
-            //         printf("\n\nWrong!!! The correct answer is A.Seismology");getch();
-            //         break;
-            //     }
+                    printf("\n\nWrong!!! The correct answer is B.Joe Biden");getch();
+                    break;}   
+
+            case 3:
+                printf("\n\nHanoi is the capital of which country?");
+                printf("\n\nA.Cambodia\t\tB.Laos\n\nC.Thailand\t\tD.Vietnam");
+                if (toupper(getch())=='D')
+                    {printf("\n\nCorrect!!!");countr++;getch();
+                    break;getch();}
+                else
+                    {printf("\n\nWrong!!! The correct answer is D.Vietnam");getch();
+                    break;}
+
+            case 4:
+                printf("\n\nWhat is the capital of Poland?");
+                printf("\n\nA.Kraków\t\tB.Gdańsk\n\nC.Leipzig\t\tD.Warsaw");
+                if (toupper(getch())=='D')
+                    {printf("\n\nCorrect!!!");countr++;getch();
+                    break;getch();}
+                else
+                    {printf("\n\nWrong!!! The correct answer is D.Warsaw");getch();
+                    break;}
+
+            case 5:
+                printf("\n\nWhat brand of soft drink did Joseph Biedenharn give birth to?");
+                printf("\n\nA.Coca-cola\t\tB.Pepsi\n\nC.Sprite\t\tD.Oleang");
+                if (toupper(getch())=='A')
+                    {printf("\n\nCorrect!!!");countr++;getch();
+                    break;getch();}
+                else
+                    {printf("\n\nWrong!!! The correct answer is A.Coca-cola");getch();
+                    break;}
+
+            case 6:
+                printf("\n\nIn what year was Russia's Myer space station launched falling into the ocean?");
+                printf("\n\nA.1970\t\tB.1980\n\nC.1990\t\tD.2000");
+                if (toupper(getch())=='D')
+                    {printf("\n\nCorrect!!!");countr++;getch();
+                    break;getch();}
+                else
+                    {printf("\n\nWrong!!! The correct answer is D.2000");getch();
+                    break;}
+
+            case 7:
+                printf("\n\n\nWhat is the last letter in Greek?");
+                printf("\n\nA.Theta\t\tB.Omicron\n\nC.Omega\t\tD.Sigma");
+                if (toupper(getch())=='C')
+                    {printf("\n\nCorrect!!!");countr++;getch();
+                    break;}
+                else
+                {
+                    printf("\n\nWrong!!! The correct answer is C.Omega");getch();
+                    break;}   
+
+            case 8:
+                printf("\n\nWhere is the largest football stadium in the world?");
+                printf("\n\nA.Old Trafford\t\tB.Maracanã Stadium\n\nC.Rajamangala National Stadium\t\tD.Olympic Stadium");
+                if (toupper(getch())=='B')
+                    {printf("\n\nCorrect!!!");countr++;getch();
+                    break;getch();}
+                else
+                    {printf("\n\nWrong!!! The correct answer is B.Maracanã Stadium");getch();
+                    break;}
+
+            case 9:
+                printf("\n\nWhat is a photo film made of?");
+                printf("\n\nA.Acetonitrile\t\tB.Silver Nitrate\n\nC.Ethyl Acetate\t\tD.Sodium chloride");
+                if (toupper(getch())=='B')
+                    {printf("\n\nCorrect!!!");countr++;getch();
+                    break;getch();}
+                else
+                    {printf("\n\nWrong!!! The correct answer is B.Silver Nitrate");getch();
+                    break;}
+
+            case 10:
+                printf("\n\nWhich lizard is the largest in the world?");
+                printf("\n\nA.Komodo Dragon\t\tB.Lizardon\n\nC.Megalodon\t\tD.Jackson's Chameleon");
+                if (toupper(getch())=='A')
+                    {printf("\n\nCorrect!!!");countr++;getch();
+                    break;getch();}
+                else
+                    {printf("\n\nWrong!!! The correct answer is A.Komodo Dragon");getch();
+                    break;}     
         }
     }
     system("cls");
