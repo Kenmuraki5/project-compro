@@ -239,7 +239,7 @@ int main()
 
             case 2:
                 printf("\n\n\nWho is the president of America?");
-                printf("\n\nA.John Cena\t\tB.Joe Biden\n\nC.Michael Jordan\t\tD.Dwayne Johnson");
+                printf("\n\nA.John Cena\t\tB.Joe Biden\n\nC.Michael Jordan\tD.Dwayne Johnson");
                 if (toupper(getch())=='B')
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;}
@@ -259,17 +259,17 @@ int main()
                     break;}
 
             case 4:
-                printf("\n\nWhat is the capital of Poland?");
-                printf("\n\nA.Kraków\t\tB.Gdańsk\n\nC.Leipzig\t\tD.Warsaw");
+                printf("\n\nWhich country is the birthplace of bread?");
+                printf("\n\nA.France\t\tB.England\n\nC.Belgium\t\tD.Egypt");
                 if (toupper(getch())=='D')
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;getch();}
                 else
-                    {printf("\n\nWrong!!! The correct answer is D.Warsaw");getch();
+                    {printf("\n\nWrong!!! The correct answer is D.Egypt");getch();
                     break;}
 
             case 5:
-                printf("\n\nWhat brand of soft drink did Joseph Biedenharn give birth to?");
+                printf("\n\nWhich is the brand of soft drinks invented by Joseph Biedenharn");
                 printf("\n\nA.Coca-cola\t\tB.Pepsi\n\nC.Sprite\t\tD.Oleang");
                 if (toupper(getch())=='A')
                     {printf("\n\nCorrect!!!");countr++;getch();
@@ -300,18 +300,18 @@ int main()
                     break;}   
 
             case 8:
-                printf("\n\nWhere is the largest football stadium in the world?");
-                printf("\n\nA.Old Trafford\t\tB.Maracanã Stadium\n\nC.Rajamangala National Stadium\t\tD.Olympic Stadium");
+                printf("\n\nWhich countries eat the most fish?");
+                printf("\n\nA.Thailand\t\tB.Japan\n\nC.America\t\tD.Spain");
                 if (toupper(getch())=='B')
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;getch();}
                 else
-                    {printf("\n\nWrong!!! The correct answer is B.Maracanã Stadium");getch();
+                    {printf("\n\nWrong!!! The correct answer is B.Japan");getch();
                     break;}
 
             case 9:
                 printf("\n\nWhat is a photo film made of?");
-                printf("\n\nA.Acetonitrile\t\tB.Silver Nitrate\n\nC.Ethyl Acetate\t\tD.Sodium chloride");
+                printf("\n\nA.Acetonitrile\t\tB.Silver Nitrate\n\nC.Ethyl Acetate\t\tD.Sodium Chloride");
                 if (toupper(getch())=='B')
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;getch();}
