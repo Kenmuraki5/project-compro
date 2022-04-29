@@ -7,7 +7,7 @@
 void change_topscore(float newscore, char namee[20])
 {
     system("cls");
-    char oldnm[];
+    char oldnm[20];
     float score;
     FILE *high;
     high=fopen("score.txt","r");
