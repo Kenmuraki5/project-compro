@@ -143,11 +143,10 @@ int main()
     home:
     system("cls");
     count=0;
-    for(i=1;i<=3;i++)
+    for(i=1;i<4;i++)
     {
 		system("cls");
-		number = rand() % 6;
-		switch(number)
+		switch(number = i)
 		{
 			case 1:
                 printf("\n\nWhich of the following is a Palindrome number?");
@@ -182,44 +181,6 @@ int main()
                 }
 
 			case 3:
-                printf("\n\n\nWhich animal laughs like human being?");
-                printf("\n\nA.Polar Bear\t\tB.Hyena\n\nC.Donkey\t\tD.Chimpanzee");
-                if (toupper(getch())=='B')
-                    {printf("\n\nCorrect!!!");count++;
-                    getch();
-                    break;}
-                else{
-                    printf("\n\nWrong!!! The correct answer is B.Hyena");
-                    getch();
-                    break;}
-
-			case 4:
-                printf("\n\n\nWho was awarded the youngest player award in Fifa World Cup 2006?");
-                printf("\n\nA.Wayne Rooney\t\tB.Lucas Podolski\n\nC.Lionel Messi\t\tD.Christiano Ronaldo");
-                if (toupper(getch())=='B')
-                    {printf("\n\nCorrect!!!");count++;
-                    getch();
-                    break;}
-                else{
-                    printf("\n\nWrong!!! The correct answer is B.Lucas Podolski");
-                    getch();
-                    break;}
-
-			case 5:
-                printf("\n\n\nWhich is the third highest mountain in the world?");
-                printf("\n\nA.Mt. K2\t\tB.Mt. Kanchanjungha\n\nC.Mt. Makalu\t\tD.Mt. Kilimanjaro");
-                if (toupper(getch())=='B')
-                    {printf("\n\nCorrect!!!");count++;
-                    getch();
-                        break;}
-                else
-                {
-                    printf("\n\nWrong!!! The correct answer is B.Mt. Kanchanjungha");
-                    getch();
-                    break;
-                }
-
-			case 6:
                 printf("\n\n\nWhat is the group of frogs known as?");
                 printf("\n\nA.A traffic\t\tB.A toddler\n\nC.A police\t\tD.An Army");
                 if (toupper(getch())=='D' )
