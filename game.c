@@ -140,10 +140,10 @@ int main()
 	{
         goto mainhome;
     }
-    home:
+    home://ส่วนของ warm up ก่อนเริ่มเกม
     system("cls");
     count=0;
-    for(i=1;i<4;i++)
+    for(i=1;i<4;i++)//ลูปจำนวนข้อใน warm up game เอาสัก 10 ข้อ
     {
 		system("cls");
 		switch(number = i)
@@ -217,10 +217,11 @@ int main()
     else{
         goto test;
     }
-    game:
+
+    game://ส่วนของ quiz game
     system("cls");
     countr=0;
-    for(i=1;i<=2;i++)
+    for(i=1;i<=2;i++)//กำหนดลูปสร้างจำนวนข้อใน quiz game
     {
         system("cls");
         number2=i;
@@ -243,15 +244,27 @@ int main()
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;}
                 else
-                    {
+                {
                     printf("\n\nWrong!!! The correct answer is A.Seismology");getch();
                     break;
-                    }
+                }           
+            // ตัวอย่าง
+            // case 3:
+            //     printf("\n\n\nStudy of Earthquake is called............,");
+            //     printf("\n\nA.Seismology\t\tB.Cosmology\n\nC.Orology\t\tD.Etimology");
+            //     if (toupper(getch())=='A')
+            //         {printf("\n\nCorrect!!!");countr++;getch();
+            //         break;}
+            //     else
+            //     {
+            //         printf("\n\nWrong!!! The correct answer is A.Seismology");getch();
+            //         break;
+            //     }
         }
     }
     system("cls");
 	score=(float)countr*100000;
-	if(score==20000)
+	if(score==1000000)
 	{
 	    printf("\n \t\t**************** wowwwwwwwwww ****************");
         printf("\n\n\n \t\t     you are intelligent man");
@@ -269,7 +282,7 @@ int main()
     }
 
 	go:
-	puts("\n\n Press Y if you want to play next game");
+	puts("\n\n Press Y if you want to play again");
 	puts(" Press any key if you want to go main menu");
 	if (toupper(getch())=='Y')
 		goto home;
