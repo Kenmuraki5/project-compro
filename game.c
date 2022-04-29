@@ -221,7 +221,7 @@ int main()
     game://ส่วนของ quiz game
     system("cls");
     countr=0;
-    for(i=1;i<=2;i++)//กำหนดลูปสร้างจำนวนข้อใน quiz game
+    for(i=1;i<=10;i++)//กำหนดลูปสร้างจำนวนข้อใน quiz game
     {
         system("cls");
         number2=i;
