@@ -356,7 +356,7 @@ int main()
 		goto home;
 	else
 		{
-		edit_score(score,playername);
+		change_topscore(score,playername);
 		goto mainhome;
         }
 }
