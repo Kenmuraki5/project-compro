@@ -339,7 +339,7 @@ int main()
         printf("\n\n\n \t\t  congratulations a new millionare");
 	    printf("\n\t\t    YOU ARE A MILLIONAIRE!!!!!!!!!");
 	    printf("\n\t\t    You won $%.2f",score);
-	    printf("\t\t Thank You!!");
+	    printf("\n\t\t      Thank You!!");
 	}
 	else
     {
