@@ -69,27 +69,34 @@ int main()
     system("cls");
     printf("\033[1;31m");
     printf("\033[1;31m");
-    printf("\n\t\t -----------------------------------------");
-    printf("\n\t\t|\t          WELCOME                 |");
-    printf("\n\t\t|\t            TO                    |");
-    printf("\n\t\t|\t         QUIZ GAME                |");
-    printf("\n\t\t -----------------------------------------");
+    printf("\n\t\t\t\t\t -----------------------------------------");
+    printf("\n\t\t\t\t\t|\t          WELCOME                 |");
+    printf("\n\t\t\t\t\t|\t            TO                    |");
+    printf("\n\t\t\t\t\t|\t         QUIZ GAME                |");
+    printf("\n\t\t\t\t\t -----------------------------------------");
     printf("\033[0;37m");
-    printf("\n\t\t  \033[0;34m________________________________________");
-    printf("\n\t\t      \033[0;37mThis QUIZ GAME is C language Quiz\033[0;37m    ") ;
-    printf("\n\t\t  \033[0;34m________________________________________");
-    printf("\n\t\t  \033[0;36m________________________________________\033[0;37m\n");
-    printf("\n\t\t    - Press \033[1;31mS\033[0;37m to start the game");
-    printf("\n\t\t    - Press \033[1;31mV\033[0;37m to view the highest score  ");
-    printf("\n\t\t    - Press \033[1;31mH\033[0;37m for help            ");
-    printf("\n\t\t    - Press \033[1;31mQ\033[0;37m to quit             ");
-    printf("\n\t\t  \033[0;36m________________________________________\033[0;37m\n\n");
-    for(i=0;i<80;i++)
-		printf("=");
-	    printf("\n                 date and time : %s",ctime(&t));
-	for(i=0;i<80;i++)
-		printf("=");
-    printf("\n");
+    printf("\n\t\t\t\t\t  \033[0;34m________________________________________");
+    printf("\n\n\t\t\t\t\t      \033[0;37mThis QUIZ GAME is C language Quiz\033[0;37m    ") ;
+    printf("\n\t\t\t\t\t  \033[0;34m________________________________________");
+    printf("\n\t\t\t\t\t  \033[0;36m________________________________________\033[0;37m\n");
+    printf("\n\t\t\t\t\t    - Press \033[1;31mS\033[0;37m to start the game");
+    printf("\n\t\t\t\t\t    - Press \033[1;31mV\033[0;37m to view the highest score  ");
+    printf("\n\t\t\t\t\t    - Press \033[1;31mH\033[0;37m for help            ");
+    printf("\n\t\t\t\t\t    - Press \033[1;31mQ\033[0;37m to quit             ");
+    printf("\n\t\t\t\t\t  \033[0;36m________________________________________\033[0;37m\n\n");
+    for(i=1;i<100;i++){
+        if(i < 27)
+            printf(" ");
+        else
+		    printf("=");
+    }
+	    printf("\n\t\t\t\t\t  date and time : %s",ctime(&t));
+	for(i=1;i<100;i++){
+		if(i < 27)
+            printf(" ");
+        else
+		    printf("=");
+    }
     choice=toupper(getch());
      
     if(choice=='S')
@@ -110,7 +117,7 @@ int main()
     }
     else
         goto mainhome;
-    printf("\n\n\n******Press ENTER to go warm-up game******");
+    printf("\n\n\n\t\t\t\t\t******Press ENTER to go warm-up game******");
     printf("\n\n\n\n\n\n\n\t\t\tResister your name: ");
     gets(playername);
 
@@ -213,8 +220,8 @@ int main()
         }
     test:
     system("cls");
-    printf("\n\n\t*** CONGRATULATION %s you are eligible to play the Game ***",playername);
-    printf("\n\n\n\n\t!Press P key to Start the Game!");
+    printf("\n\n\t\t               *** YEAAHHHHH!!! %s you can eligible to play  Game ***",playername);
+    printf("\n\n\n\n\t\t\t\t\t     !Press P key to Start the Game!");
     if(toupper(getch())=='P')
     {
 		goto game;
