@@ -138,7 +138,7 @@ int main()
     printf("\n\t\t >> No negative marking for wrong answers!");
     printf("\n\n\t\t\t\t    !!!!!!!!!!!!! ALL THE BEST !!!!!!!!!!!!!");
     printf("\n\n\n\n\t\t\t\033[0;34m Press Y  to play this game!\n");
-    printf("\n\t\t\t\033[1;31m Press any other key to return to the main menu!\033[0;37m");
+    printf("\n\t\t\t\033[1;31m Press any key to Main menu!\033[0;37m");
     if (toupper(getch())=='Y')
 		{
 		    goto home;
@@ -214,22 +214,17 @@ int main()
     else
         {
         system("cls");
-        printf("\n\nSORRY YOU ARE NOT ELIGIBLE TO PLAY THIS GAME Because you stupid, BETTER LUCK NEXT TIME");
+        printf("\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\tSORRY YOU ARE NOT ELIGIBLE TO PLAY THIS GAME");
+        printf("\n\n\t\t\t\t\t Because You haven't prepared well enough\n\n\t\t\t\t\t    ******see you again next time******");
+        printf("\n\n\t\t\t\t\t\t Press any key to main menu");
         getch();
         goto mainhome;
         }
     test:
     system("cls");
-    printf("\n\n\t\t               *** YEAAHHHHH!!! %s you can eligible to play  Game ***",playername);
-    printf("\n\n\n\n\t\t\t\t\t     !Press P key to Start the Game!");
-    if(toupper(getch())=='P')
-    {
-		goto game;
-    }
-    else{
-        goto test;
-    }
-
+    printf("\n\n\n\n\n\n\t\t\t          *** YEAAHHHHH!!! %s you can eligible to play  Game ***",playername);
+    printf("\n\n\n\n\t\t\t\t\t   !Press any key to Start the Game!");
+    getch();
     game://ส่วนของ quiz game
     system("cls");
     countr=0;
