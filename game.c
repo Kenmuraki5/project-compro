@@ -10,12 +10,12 @@ void change_topscore(float newscore, char namee[20])
     char oldnm[20];
     float score;
     FILE *high;
-    high=fopen("score.txt","r");
+    high=fopen("point.txt","r");
     fscanf(high,"%s%f",&oldnm,&score);
     if (newscore>=score)
     { 
         fclose(high);
-        high=fopen("score.txt","w");
+        high=fopen("point.txt","w");
         fprintf(high,"%s\n%.2f", namee, newscore);
         fclose(high);
     }
@@ -27,7 +27,7 @@ void top_score()
     char name[20];
     float scr;
     FILE *f;
-    f=fopen("score.txt","r");
+    f=fopen("point.txt","r");
     fscanf(f,"%s%f",&name,&scr);
     printf("\n\n\t\t*************************************************************");
     printf("\n\n\t\t\t %s was the Highest Score",name);
