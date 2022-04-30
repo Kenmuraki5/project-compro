@@ -351,7 +351,7 @@ int main()
 
             case 10:
                 printf("\n\nOut of the following declarations, which one is invalid?");
-                printf("\n\nA.short a = 10;\t\tB.unsigned short b = 20;\n\nC.long double c = 30;\t\tD.long short d = 40;");
+                printf("\n\nA.short a = 10;\t\tB.unsigned short b = 20;\n\nC.long double c = 30;\tD.long short d = 40;");
                 if (toupper(getch())=='D')
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;getch();}
