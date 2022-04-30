@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<conio.h>
+#include<string.h>
 #include<ctype.h>
 #include<stdlib.h>
-#include<string.h>
 #include<time.h>
 void change_topscore(float newscore, char namee[20])
 {
@@ -154,7 +154,8 @@ int main()
                 printf("\n\nA.helloworld\t\tB.world\n\nC.hello\t\t\tD.Compiler error");
                 if (toupper(getch())=='A')
                     {
-                        printf("\n\nCorrect!!!");count++;
+                        printf("\n\nCorrect!!!");
+                        count++;
                         getch();
                         break;
                     }
@@ -170,8 +171,7 @@ int main()
                 printf("\n\nA.fremove()\t\tB.fclose()\n\nC.remove()\t\tD.file pointer to be set to NULL");
                 if (toupper(getch())=='B')
                 {
-                    printf("\n\nCorrect!!! \n\nfclose(), it flushes the buffers associated");
-                    printf("with the stream and disconnects the stream with the file.");
+                    printf("\n\nCorrect!!!");
                     count++;
                     getch();
                     break;
@@ -179,14 +179,16 @@ int main()
                 else
                 {
                     printf("\n\nWrong!!! The correct answer is B.fclose");
+                    printf("\n\n  - fclose(), it flushes the buffers associated");
+                    printf("with the stream and disconnects the stream with the file.");
                     getch();
                     break;
                 }
 
 			case 3:
-                printf("\n\n\nWhat is the group of frogs known as?");
-                printf("\n\nA.A traffic\t\tB.A toddler\n\nC.A police\t\tD.An Army");
-                if (toupper(getch())=='D' )
+                printf("\n\n\nWhich of the following is not a reserved word in C langauge?");
+                printf("\n\nA. for\t\tB. doo\n\nC. goto\t\tD. switch");
+                if (toupper(getch())=='B' )
                 {	
                     printf("\n\nCorrect!!!");count++;
                     getch();
@@ -194,7 +196,7 @@ int main()
                 }
                 else
                 {	
-                    printf("\n\nWrong!!! The correct answer is D.An Army");
+                    printf("\n\nWrong!!! The correct answer is B. doo");
                     getch();
                     break;
                 }
@@ -231,106 +233,134 @@ int main()
         switch(number2)
         {
             case 1:
-                printf("\n\nHow high is Mount Everest?");
-                printf("\n\nA.6848 m\t\tB.7848 m\n\nC.8848 m\t\tD.9848 m");
+                printf("\n\nWhat is answer of a and b?\n");
+                printf("\n#include<stdio.h>\nint main()\n{\n    int a = 10, b = 25;\n    a = b++ + a++;\n");
+                printf("    b = ++b + ++a;\n    printf(\"a = %%d b = %%d\", a, b);\n}");
+                printf("\n\nA.a=36 b=64\t\tB.a=35 b=62\n\nC.a=36 b=63\t\tD.a=37 b=63");
                 if (toupper(getch())=='C')
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;getch();}
                 else
-                    {printf("\n\nWrong!!! The correct answer is C.8848 m");getch();
-                    break;}
+                    {
+                        printf("\n\nWrong!!! The correct answer is C.a=36 b=63");getch();
+                        break;
+                    }
 
             case 2:
-                printf("\n\n\nWho is the president of America?");
-                printf("\n\nA.John Cena\t\tB.Joe Biden\n\nC.Michael Jordan\tD.Dwayne Johnson");
+                printf("\n\nWhat is the output of the following program?\n");
+                printf("\n#include<stdio.h>\nint main()\n{\n    int a[3] = {2,1};\n    printf(\"%%d\", a[a[1]]);\n}");
+                printf("\n\nA.0\t\tB.1\n\nC.2\t\tD.3");
                 if (toupper(getch())=='B')
-                    {printf("\n\nCorrect!!!");countr++;getch();
-                    break;}
-                else
-                {
-                    printf("\n\nWrong!!! The correct answer is B.Joe Biden");getch();
-                    break;}   
-
-            case 3:
-                printf("\n\nHanoi is the capital of which country?");
-                printf("\n\nA.Cambodia\t\tB.Laos\n\nC.Thailand\t\tD.Vietnam");
-                if (toupper(getch())=='D')
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;getch();}
                 else
-                    {printf("\n\nWrong!!! The correct answer is D.Vietnam");getch();
+                    {
+                        printf("\n\nWrong!!! The correct answer is B.1");
+                        printf("\n\n  - 1, The inner indirection evaluates to 1, and the value at index 1 for outer indirection is 1.");
+                        getch();
+                        break;
+                    }
+
+            case 3:
+                printf("\n\nWhat is a output of the following code segment?");
+                printf("\n\n#include<stdio.h>\nint main()\n{\n    int array[10] = {3, 0, 8, 1, 12, 8, 9, 2, 13, 10};\n    int x, y, z;");
+                printf("\n    x = ++array[2];\n    y = array[2]++;\n    z = array[x++];\n    printf(\"%%d %%d %%d\", x, y, z);");
+                printf("\n    return 0;\n}");
+                printf("\n\nA. 10 9 10\t\tB. 9 10 9\n\nC. 9 9 10\t\tD. None of the above");
+                if (toupper(getch())=='A')
+                    {printf("\n\nCorrect!!!");countr++;getch();
+                    break;getch();}
+                else
+                    {printf("\n\nWrong!!! The correct answer is A. 10 9 10");getch();
                     break;}
 
             case 4:
-                printf("\n\nWhich country is the birthplace of bread?");
-                printf("\n\nA.France\t\tB.England\n\nC.Belgium\t\tD.Egypt");
+                printf("\n\nWhich of the following statements about functions is false?");
+                printf("\n\nA. The main() function can be called recursively\n\nB. Functions cannot return more than one value at a time\n\n");
+                printf("C. A function can have multiple return statements with different return values\n\nD. The maximum number of arguments a function can take is 128");
                 if (toupper(getch())=='D')
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;getch();}
                 else
-                    {printf("\n\nWrong!!! The correct answer is D.Egypt");getch();
+                    {printf("\n\nWrong!!! The correct answer is D. The maximum number of arguments a function can take is 128");getch();
                     break;}
 
             case 5:
-                printf("\n\nWhich is the brand of soft drinks invented by Joseph Biedenharn");
-                printf("\n\nA.Coca-cola\t\tB.Pepsi\n\nC.Sprite\t\tD.Oleang");
-                if (toupper(getch())=='A')
+                printf("\n\nWhich function would you use to convert 1.98 to 1?");
+                printf("\n\nA.ceil()\t\tB.floor()\n\nC.fabs()\t\tD.abs()");
+                if (toupper(getch())=='B')
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;getch();}
                 else
-                    {printf("\n\nWrong!!! The correct answer is A.Coca-cola");getch();
+                    {printf("\n\nWrong!!! The correct answer is B.floor()");getch();
                     break;}
 
             case 6:
-                printf("\n\nIn what year was Russia's Myer space station launched falling into the ocean?");
-                printf("\n\nA.1970\t\tB.1980\n\nC.1990\t\tD.2000");
-                if (toupper(getch())=='D')
+                printf("\n\nWhich of the following statements about the null pointer is correct?");
+                printf("\n\nA. The null pointer is similar to an uninitialized pointer\n\nB. You can declare a null pointer as char* p = (char*)0\n\n");
+                printf("C. The NULL macro is defined only in the stdio.h header\n\nD. The sizeof( NULL) operation would return the value 1");
+                if (toupper(getch())=='B')
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;getch();}
                 else
-                    {printf("\n\nWrong!!! The correct answer is D.2000");getch();
+                    {printf("\n\nWrong!!! The correct answer is B. You can declare a null pointer as char* p = (char*)0");getch();
                     break;}
 
             case 7:
-                printf("\n\n\nWhat is the last letter in Greek?");
-                printf("\n\nA.Theta\t\tB.Omicron\n\nC.Omega\t\tD.Sigma");
-                if (toupper(getch())=='C')
+                printf("\n\n\nWhich is the answer of a?\n");
+                printf("  address a = 6422300\n  address b = 6422296");
+                printf("\n\n#include<stdio.h>\nint main()\n{\n    int a=3;\n    int *b;");
+                printf("\n    b = &a;\n    printf(\"Values of a = %d \", *b);");
+                printf("\n\nA.3\t\tB. 6422300\n\nC.6422296\tD. error");
+                if (toupper(getch())=='A')
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;}
                 else
                 {
-                    printf("\n\nWrong!!! The correct answer is C.Omega");getch();
+                    printf("\n\nWrong!!! The correct answer is A.3");getch();
                     break;}   
 
             case 8:
-                printf("\n\nWhich countries eat the most fish?");
-                printf("\n\nA.Thailand\t\tB.Japan\n\nC.America\t\tD.Spain");
-                if (toupper(getch())=='B')
+                printf("\n\nIn what way are both declarations different from each other?\n int display();\n extern int display();");
+                printf("\n\nA.No difference\n\nB.Extern is not a valid keyword\n\nC.Extern indicates that the function has been created in an external file");
+                printf("\n\nD.Extern indicates that the function is not accessible in the program");
+                if (toupper(getch())=='C')
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;getch();}
                 else
-                    {printf("\n\nWrong!!! The correct answer is B.Japan");getch();
+                    {printf("\n\nWrong!!! The correct answer is C. Extern indicates that the function has been created in an external file");getch();
                     break;}
 
             case 9:
-                printf("\n\nWhat is a photo film made of?");
-                printf("\n\nA.Acetonitrile\t\tB.Silver Nitrate\n\nC.Ethyl Acetate\t\tD.Sodium Chloride");
-                if (toupper(getch())=='B')
-                    {printf("\n\nCorrect!!!");countr++;getch();
-                    break;getch();}
-                else
-                    {printf("\n\nWrong!!! The correct answer is B.Silver Nitrate");getch();
-                    break;}
-
-            case 10:
-                printf("\n\nWhich lizard is the largest in the world?");
-                printf("\n\nA.Komodo Dragon\t\tB.Lizardon\n\nC.Megalodon\t\tD.Jackson's Chameleon");
+                printf("\n\nWhat is a strcmp() function?");
+                printf("\n\nA.It compares two strings character by character. If the strings are equal, the function returns 0.");
+                printf("\n\nB.It copies string pointed to by source into the destination. ");
+                printf("\n\nC.Copy of the string pointed to the end of string");
+                printf("\n\nD.Returns the uppercase string from the given string. It converts all lowercase characters to uppercase.");
+                printf("");
                 if (toupper(getch())=='A')
                     {printf("\n\nCorrect!!!");countr++;getch();
                     break;getch();}
                 else
-                    {printf("\n\nWrong!!! The correct answer is A.Komodo Dragon");getch();
-                    break;}     
+                    {
+                        printf("\n\nWrong!!! The correct answer is\n");
+                        printf("A.It compares two strings character by character. If the strings are equal, the function returns 0.");
+                        getch();
+                        break;
+                    }
+
+            case 10:
+                printf("\n\nOut of the following declarations, which one is invalid?");
+                printf("\n\nA.short a = 10;\t\tB.unsigned short b = 20;\n\nC.long double c = 30;\t\tD.long short d = 40;");
+                if (toupper(getch())=='D')
+                    {printf("\n\nCorrect!!!");countr++;getch();
+                    break;getch();}
+                else
+                    {
+                        printf("\n\nWrong!!! The correct answer is D.long short d = 40;");
+                        getch();
+                        break;
+                    }     
         }
     }
     system("cls");
