@@ -76,7 +76,7 @@ int main()
     printf("\n\t\t -----------------------------------------");
     printf("\033[0;37m");
     printf("\n\t\t  \033[0;34m________________________________________");
-    printf("\n\t\t                \033[0;37mTEST YOUR IQ\033[0;37m    ") ;
+    printf("\n\t\t      \033[0;37mThis QUIZ GAME is C language Quiz\033[0;37m    ") ;
     printf("\n\t\t  \033[0;34m________________________________________");
     printf("\n\t\t  \033[0;36m________________________________________\033[0;37m\n");
     printf("\n\t\t    - Press \033[1;31mS\033[0;37m to start the game");
@@ -86,7 +86,7 @@ int main()
     printf("\n\t\t  \033[0;36m________________________________________\033[0;37m\n\n");
     for(i=0;i<80;i++)
 		printf("=");
-	    printf("\nCurrent date and time : %s",ctime(&t));
+	    printf("\n                 date and time : %s",ctime(&t));
 	for(i=0;i<80;i++)
 		printf("=");
     printf("\n");
