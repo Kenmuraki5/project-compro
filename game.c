@@ -149,9 +149,10 @@ int main()
 		switch(number = i)
 		{
 			case 1:
-                printf("\n\nWhich of the following is a Palindrome number?");
-                printf("\n\nA.42042\t\tB.101010\n\nC.23232\t\tD.01234");
-                if (toupper(getch())=='C')
+                printf("\n\nWhat is the output of the following code snippet?\n");
+                printf("\n#include<stdio.h>\nint main()\n{\n    int x = 5;\n    if (x = 5)\n       printf(\"hello\");\n    printf(\"world\");\n}");
+                printf("\n\nA.helloworld\t\tB.world\n\nC.hello\t\t\tD.Compiler error");
+                if (toupper(getch())=='A')
                     {
                         printf("\n\nCorrect!!!");count++;
                         getch();
@@ -159,23 +160,25 @@ int main()
                     }
                 else
                     {
-                        printf("\n\nWrong!!! The correct answer is C.23232");
+                        printf("\n\nWrong!!! The correct answer is A.hello world ");
                         getch();
                         break;
                     }
 
 			case 2:
-                printf("\n\n\nThe country with the highest environmental performance index is...");
-                printf("\n\nA.France\t\tB.Denmark\n\nC.Switzerland\t\tD.Finland");
-                if (toupper(getch())=='C')
+                printf("\n\n\nWhich of the following functions disconnects the stream from the file pointer.");
+                printf("\n\nA.fremove()\t\tB.fclose()\n\nC.remove()\t\tD.file pointer to be set to NULL");
+                if (toupper(getch())=='B')
                 {
-                    printf("\n\nCorrect!!!");count++;
+                    printf("\n\nCorrect!!! \n\nfclose(), it flushes the buffers associated");
+                    printf("with the stream and disconnects the stream with the file.");
+                    count++;
                     getch();
                     break;
                 }
                 else
                 {
-                    printf("\n\nWrong!!! The correct answer is C.Switzerland");
+                    printf("\n\nWrong!!! The correct answer is B.fclose");
                     getch();
                     break;
                 }
