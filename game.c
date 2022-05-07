@@ -39,21 +39,20 @@ void top_score()
 void help()
 {
     system("cls");
-    printf("\n\n                              HELP");
-    printf("\n *************************************************************************");
-    printf("\n                           C program Quiz Game");
-    printf("\n 1) There are two rounds in the game, WARMUP ROUND & CHALLANGE ROUND");
-    printf("\n    In warmup round you will be asked a total of 3 questions to test your general");
-    printf("\n    knowledge. You will be eligible to play the game if you can give atleast 2");
-    printf("\n    right answers otherwise you can't play the Game...........");
-    printf("\n 2) Your game starts with the CHALLANGE ROUND. In this round you will be asked");
-    printf("\n    total 10 questions each right answer will be awarded $100,000.");
-    printf("\n    By this way you can win upto ONE MILLION cash prize in USD...............");
-    printf("\n 3) You will be given 4 options and you have to press A, B ,C or D for the");
-    printf("\n    right option");
-    printf("\n 4) You will be asked questions continuously if you keep giving the right answers.");
-	printf("\n\n**************************************************************************");
-	printf("\n\n*****This quizgame is part of the project of computer programming with c code ******");
+    printf("\n\n\t\t                                           HELP\n");
+    printf("\n\t      *******************************************************************************************");
+    printf("\n\t                                           C program Quiz Game\n");
+    printf("\n\t   1) When you start game In the game are two rounds to play  the game, WARMUP ROUND & CHALLANGE ROUND");
+    printf("\n\t      In warmup round you will be asked a total of 3 questions to test your basic c language");
+    printf("\n\t      knowledge. You will be eligible to play the game if you can give atleast 2 answer");
+    printf("\n\t      but if you answer incorrect atleast 2 answer you will not eligible to play this game");
+    printf("\n\t   2) Your game starts with the CHALLANGE ROUND. In this round you will be asked");
+    printf("\n\t      total 10 questions each right answer will be awarded 100 bath in your true money code.");
+    printf("\n\t   3) You will be given 4 options and you have to press A, B ,C or D for the");
+    printf("\n\t      right option");
+    printf("\n\t   4) You will be asked questions continuously if you keep giving the right answers.");
+	printf("\n\n\t    *******************************************************************************************");
+	printf("\n\n     *****This quizgame is part of the project of computer programming with c code ******");
     printf("\033[1;31m");
     printf("\n\n\nPrees any key to Main menu");
 }
@@ -76,7 +75,7 @@ int main()
     printf("\n\t\t\t\t\t -----------------------------------------");
     printf("\033[0;37m");
     printf("\n\t\t\t\t\t  \033[0;34m________________________________________");
-    printf("\n\n\t\t\t\t\t      \033[0;37mThis QUIZ GAME is C language Quiz\033[0;37m    ") ;
+    printf("\n\n\t\t\t\t\t      \033[0;32mThis QUIZ GAME is C language Quiz\033\033[0;32m    ") ;
     printf("\n\t\t\t\t\t  \033[0;34m________________________________________");
     printf("\n\t\t\t\t\t  \033[0;36m________________________________________\033[0;37m\n");
     printf("\n\t\t\t\t\t    - Press \033[1;31mS\033[0;37m to start the game");
@@ -122,22 +121,21 @@ int main()
     gets(playername);
 
     system("cls");
-    printf("\n\t\t ---------------------  Welcome %s to C Program Quiz Game ---------------------",playername);
-    printf("\n\n\t\t Here are some tips you might wanna know before playing:");
-    printf("\n\t\t -------------------------------------------------------------------------");
-    printf("\n\t\t >> There are 2 rounds in this Quiz Game,WARMUP ROUND & CHALLANGE ROUND");
-    printf("\n\t\t >> In warmup round you will be asked total 3 questions to test your");
-    printf("\n\t\t    general knowledge. You are eligible to play the game if you give atleast 2");
-    printf("\n\t\t    right answers, otherwise you can't proceed further to the Challenge Round.");
-    printf("\n\t\t >> Your game starts with CHALLANGE ROUND. In this round you will be asked a");
-    printf("\n\t\t    total of 10 questions. Each right answer will be awarded $100,000!");
-    printf("\n\t\t    By this way you can win upto ONE MILLION cash prize!!!!!..........");
-    printf("\n\t\t >> You will be given 4 options and you have to press A, B ,C or D for the");
-    printf("\n\t\t    right option.");
-    printf("\n\t\t >> You will be asked questions continuously, till right answers are given");
+    printf("\n\t\t     ---------------------  Welcome %s to C Program Quiz Game ---------------",playername);
+    printf("\n\n\t\t     Here are some tips you might wanna know before playing:");
+    printf("\n\t\t     -------------------------------------------------------------------------");
+    printf("\n\t   1) When you start game In the game are two rounds to play  the game, WARMUP ROUND & CHALLANGE ROUND");
+    printf("\n\t      In warmup round you will be asked a total of 3 questions to test your basic c language");
+    printf("\n\t      knowledge. You will be eligible to play the game if you can give atleast 2 answer");
+    printf("\n\t      but if you answer incorrect atleast 2 answer you will not eligible to play this game");
+    printf("\n\t   2) Your game starts with the CHALLANGE ROUND. In this round you will be asked");
+    printf("\n\t      total 10 questions each right answer will be awarded 100 bath in your true wallet.");
+    printf("\n\t   3) You will be given 4 options and you have to press A, B ,C or D for the");
+    printf("\n\t      right option");
+    printf("\n\t   4) You will be asked questions continuously if you keep giving the right answers.");
     printf("\n\t\t >> No negative marking for wrong answers!");
-    printf("\n\n\t\t\t\t    !!!!!!!!!!!!! ALL THE BEST !!!!!!!!!!!!!");
-    printf("\n\n\n\n\t\t\t\033[0;34m Press Y  to play this game!\n");
+    printf("\n\n\t\t\t\t    !!!!!!!!!!! GOOD LUCK BOY !!!!!!!!!!!");
+    printf("\n\n\n\n\t\t\t Press Y  to play this game!\n");
     printf("\n\t\t\t\033[1;31m Press any key to Main menu!\033[0;37m");
     if (toupper(getch())=='Y')
 		{
@@ -147,10 +145,10 @@ int main()
 	{
         goto mainhome;
     }
-    home://ส่วนของ warm up ก่อนเริ่มเกม
+    home:
     system("cls");
     count=0;
-    for(i=1;i<4;i++)//ลูปจำนวนข้อใน warm up game เอาสัก 10 ข้อ
+    for(i=1;i<4;i++)
     {
 		system("cls");
 		switch(number = i)
@@ -369,24 +367,22 @@ int main()
 	score=(float)countr*100000;
 	if(score==1000000)
 	{
-	    printf("\n \t\t**************** wowwwwwwwwww ****************");
-        printf("\n\n\n \t\t     you are intelligent man");
-        printf("\n\n\n \t\t  congratulations a new millionare");
-	    printf("\n\t\t    YOU ARE A MILLIONAIRE!!!!!!!!!");
-	    printf("\n\t\t    You won $%.2f",score);
-	    printf("\n\t\t      Thank You!!");
+	    printf("\n \t\t\033[1;31m**************** wowwwwwwwwww ****************\033[0;37m");
+        printf("\n\n\t\t            you are intelligent man");
+        printf("\n\n \t\t\033[1;31m**********************************************\033[0;37m");
+        printf("\n\n \t\t               congratulations");
+	    printf("\n\t\t             You score :1000000");
+	    printf("\n\t\t        Thank You to play my game!!\n");
+        printf("\n\t\t     True money code: xxxx-xxxx-xxxx-xx");
 	}
 	else
     {
 	    printf("\n\n\t******** SORRY YOU DIDN'T WIN ANY CASH ********");
 	    printf("\n\t\t Thanks for your participation");
 	    printf("\n\t\t TRY AGAIN");
-        goto go;
     }
-
-	go:
-	puts("\n\n Press Y if you want to play again");
-	puts(" Press any key if you want to go main menu");
+	puts("\n\n\033[0;32m Press Y if you want to play again");
+	puts("\033[1;31m Press any key if you want to go main menu\033[0;37m");
 	if (toupper(getch())=='Y')
 		goto home;
 	else
