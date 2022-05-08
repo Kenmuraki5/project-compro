@@ -373,7 +373,7 @@ int main()
         printf("\n\n \t\t               congratulations");
 	    printf("\n\t\t             You score :1000000");
 	    printf("\n\t\t        Thank You to play my game!!\n");
-        printf("\n\t\t     True money code: xxxx-xxxx-xxxx-xx");
+        printf("\n\t\t     True money code: 2206-0833-3878-17");
 	}
 	else
     {
