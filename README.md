@@ -35,7 +35,7 @@
 | ----------- | -------------    |-------------  |
 |   64070127  |  นายเคน มูรากิ     |[kenmuraki5](https://github.com/Kenmuraki5)|
 |   64070131  |  นายจีรชญา เจริญผล |[Icesac](https://github.com/IceSac)|
-|   64070227  |  นายวรลภย์ ดอกคํา  ||
+|   64070227  |  นายวรลภย์ ดอกคํา  |[woralop](https://github.com/woralop)|
 
 ## source code อ้งอิงมาจาก
 https://itsourcecode.com/free-projects/c-projects/quiz-game-in-c-with-source-code/
