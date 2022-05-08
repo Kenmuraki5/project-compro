@@ -14,15 +14,6 @@
   2. ได้นำความรู้ที่ศึกษามาใช้พัฒนาโปรเเกรม  
   3. ได้ศึกษาความรู้รอบตัวในหลายๆด้านในระหว่างการค้นคว้า  
   4. ได้วิธีการทำงานเป็นทีม  
-## สมาชิกกลุ่ม
-|  รหัสนักศึกษา  |    ชื่อ - นามสกุล   |     Github    |
-| ----------- | -------------    |-------------  |
-|   64070127  |  นายเคน มูรากิ     |[kenmuraki5](https://github.com/Kenmuraki5)|
-|   64070131  |  นายจีรชญา เจริญผล |[Icesac](https://github.com/IceSac)|
-|   64070227  |  นายวรลภย์ ดอกคํา  ||
-
-## source code อ้งอิงมาจาก
-https://itsourcecode.com/free-projects/c-projects/quiz-game-in-c-with-source-code/
 
 ## About this program (วิธีเล่น)  
 - เมื่อเปิดโปรเเกรมมาจะพบกับหน้า main menu ที่มีตัวเลือกทั้งหมด 4 ตัวเลือก    
@@ -34,3 +25,14 @@ https://itsourcecode.com/free-projects/c-projects/quiz-game-in-c-with-source-cod
 3) Press H for help เมื่อกดเข้าไปจะเจอกับหน้าต่างอธิบายวิธีการเล่นของเกม  
 
 4) Press Q quit เมื่อกดเเล้วจะทำการปิดหน้าต่างเกมลง
+
+## สมาชิกกลุ่ม  
+|  รหัสนักศึกษา  |    ชื่อ - นามสกุล   |     Github    |
+| ----------- | -------------    |-------------  |
+|   64070127  |  นายเคน มูรากิ     |[kenmuraki5](https://github.com/Kenmuraki5)|
+|   64070131  |  นายจีรชญา เจริญผล |[Icesac](https://github.com/IceSac)|
+|   64070227  |  นายวรลภย์ ดอกคํา  ||
+
+## source code อ้งอิงมาจาก
+https://itsourcecode.com/free-projects/c-projects/quiz-game-in-c-with-source-code/
+
