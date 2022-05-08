@@ -100,10 +100,10 @@ int main()
      
     if(choice=='S')
     {
-     system("cls");
+        system("cls");
     }
     else if (choice=='Q')
-		exit(1);
+	    exit(1);
     else if (choice=='H'){
         help();
         getch();
