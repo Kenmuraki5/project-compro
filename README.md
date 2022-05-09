@@ -29,7 +29,6 @@
 ## คลิปวิดีโอการใช้งานโปรเเกรม
 
 ## POSTER
-![poster.pdf](https://github.com/Kenmuraki5/project-compro/files/8652010/poster.pdf)
 
 ## สมาชิกกลุ่ม
 |  รหัสนักศึกษา  |    ชื่อ - นามสกุล   |     Github    |
