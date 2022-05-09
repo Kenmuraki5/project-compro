@@ -29,7 +29,8 @@
 ## คลิปวิดีโอการใช้งานโปรเเกรม
 
 ## POSTER
-<img alt="" src="https://cdn.discordapp.com/attachments/880831085431390301/973215764771393636/poster.pdf" height="100" width="100" align="right">
+![poster.pdf](https://github.com/Kenmuraki5/project-compro/files/8652161/poster.pdf)
+
 
 
 ## สมาชิกกลุ่ม
