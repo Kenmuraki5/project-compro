@@ -29,7 +29,7 @@
 ## คลิปวิดีโอการใช้งานโปรเเกรม
 
 ## POSTER
-![poster.pdf](https://github.com/Kenmuraki5/project-compro/files/8652112/poster.pdf)
+<img alt="" src="https://cdn.fbsbx.com/v/t59.2708-21/280371977_1182753329189218_6625871097760452701_n.pdf/05B765FC-E5B3-4F1E-9B9C-092663D8096C.pdf?_nc_cat=106&ccb=1-6&_nc_sid=0cab14&_nc_eui2=AeFZO47Sxnu_nlmuyJimsvIWWUXQ9bSOgP1ZRdD1tI6A_dxKaCY-tWcEFifPgUERjYTu40m8cYy-TqQVjLwfanQV&_nc_ohc=GjIPjM5kMdwAX-fvLCe&_nc_ht=cdn.fbsbx.com&oh=03_AVKFXo5tBco7vZ6X6fn0zJju19xEZHmIufD-m4XziUZLqg&oe=627ADBE5&dl=1" height="100" width="100" align="right">
 
 
 ## สมาชิกกลุ่ม
