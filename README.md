@@ -29,7 +29,8 @@
 ## คลิปวิดีโอการใช้งานโปรเเกรม
 
 ## POSTER
-[embed]https://github.com/Kenmuraki5/project-compro/files/8652161/poster.pdf[/embed]
+[poster.pdf](https://github.com/Kenmuraki5/project-compro/files/8652273/poster.pdf)
+
 
 
 
