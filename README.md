@@ -33,7 +33,7 @@ https://youtu.be/6tVpL4MkNpg
 
 ## POSTER
 [poster.pdf](https://github.com/Kenmuraki5/project-compro/blob/main/poster.pdf)
-![poster-1](https://user-images.githubusercontent.com/89627339/167426107-bdccefc4-0cf0-4e8a-9020-cabe9d9e6641.png)
+![poster-1](![poster-1](https://user-images.githubusercontent.com/89627339/167570484-e1a3e4b7-d1ab-4f96-863d-ed0cf68a8b5c.png)
 
 
 
