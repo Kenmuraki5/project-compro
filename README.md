@@ -27,6 +27,7 @@
 4) **Press Q quit** เมื่อกดเเล้วจะทำการปิดหน้าต่างเกมลง
 
 ## คลิปวิดีโอการใช้งานโปรเเกรม
+https://youtu.be/6tVpL4MkNpg
 
 ## POSTER
 [poster.pdf](https://github.com/Kenmuraki5/project-compro/blob/main/poster.pdf)
