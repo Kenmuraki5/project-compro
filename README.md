@@ -40,7 +40,7 @@ https://youtu.be/6tVpL4MkNpg
 |  รหัสนักศึกษา  |    ชื่อ - นามสกุล   |     Github    |
 | ----------- | -------------    |-------------  |
 |   64070127  |  นายเคน มูรากิ     |[kenmuraki5](https://github.com/Kenmuraki5)|
-|   64070131  |  นายจีรชญา เจริญผล |[Icesac](https://github.com/IceSac)|
+|   64070131  |  นายจีรชยา เจริญผล |[Icesac](https://github.com/IceSac)|
 |   64070227  |  นายวรลภย์ ดอกคํา  |[woralop](https://github.com/woralop)|
 
 ## source code อ้งอิงมาจาก
