@@ -45,6 +45,6 @@ https://youtu.be/6tVpL4MkNpg
 |   64070131  |  นายจีรชยา เจริญผล |[Icesac](https://github.com/IceSac)|
 |   64070227  |  นายวรลภย์ ดอกคํา  |[woralop](https://github.com/woralop)|
 
-## source code อ้งอิงมาจาก
+## source code บางอย่างอ้งอิงมาจาก
 https://itsourcecode.com/free-projects/c-projects/quiz-game-in-c-with-source-code/
 
